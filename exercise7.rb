@@ -5,8 +5,7 @@ students = {
   :cohort3 => 22
 }
 def display_cohorts(hsh)
-  newhsh = hsh.sort_by {|key, value| key.to_s}
-  newhsh.each {|key, value| puts "#{key}: #{value} students"}
+  hsh.each {|key, value| puts "#{key}: #{value} students"}
 end
 display_cohorts(students)
 puts " "
